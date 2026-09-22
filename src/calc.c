@@ -30,9 +30,14 @@ int main(void) {
         return 1;
         } 
     break;
-
-    }
-    printf("%lf\n", res);
     
+    default:
+    printf("Неизвестный оператор.\n");
+    return 1;
+        break;
+    }
+
+    printf("%lf\n", res);
+
     return 0;
 }
